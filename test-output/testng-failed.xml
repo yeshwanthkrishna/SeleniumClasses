@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.test.TestNgFeatures"/>
+      <class name="com.test.TestNgBasics"/>
+      <class name="com.test.GoogleTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.test.TestNgBasics">
+        <methods>
+          <include name="saveforms"/>
+          <include name="enterurl"/>
+          <include name="deletecookies"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.test.TestNgBasics -->
+      <class name="com.test.GoogleTest">
+        <methods>
+          <include name="openingselenium"/>
+          <include name="testing"/>
+          <include name="settingupchrome"/>
+        </methods>
+      </class> <!-- com.test.GoogleTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
